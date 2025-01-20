@@ -1,0 +1,8 @@
+#header {
+    position: fixed; /* ทำให้ header ค้างอยู่ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* กำหนดค่า z-index ให้สูงกว่าส่วนอื่น */
+    background-color: white; /* ใส่สีพื้นหลังเพื่อป้องกันโปร่งใส */
+}

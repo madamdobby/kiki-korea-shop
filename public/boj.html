@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="bg-gray-100 p-3 text-gray-500 text-xs w-full">
+        <div class="flex flex-row justify-between ml-10 mr-10">
+            <ul class="flex space-x-4 items-center">
+                <a href="index.html">HOME</a>
+                <a href="brands.html">BRAND</a>
+                <a href="">HALL OF FAME</a>
+                <a href="">BLOG</a>
+                <a href="">CONTACT US</a>
+            </ul>
+
+            <ul class="flex space-x-4 items-center">
+                <img src="https://imgv3.fotor.com/images/gallery/AI-3D-Female-Profile-Picture.jpg"
+                    class="rounded-full max-w-10">
+                <a href="">PROFILE</a>
+                <a href="">MY ORDER</a>
+                <a href="">SETTING</a>
+            </ul>
+        </div>
+    </nav>
+    <div id="header" class="flex justify-center">
+
+        <div id="brand__logo" class="flex font-lilita items-center text-xl md:text-3xl mr-4">
+            <a href="index.html">
+                <span>
+                    KiKi Korea Shop
+                </span>
+            </a>
+        </div>
+
+        <!-- search bar -->
+        <div class="flex p-2 ">
+            <label class="input input-bordered flex items-center gap-2 rounded-full w-auto">
+                <input type="text" class="grow" placeholder="Search" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                    class="h-4 w-4 opacity-70">
+                    <path fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </label>
+        </div>
+        <!-- search bar -->
+
+        <div class="flex p-3">
+            <a href="https://maps.app.goo.gl/Lwx2e357nwsmnX4z9" target="_blank" rel="shop_location"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6 mr-5 overflow-visible cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6 mr-5 overflow-visible cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6 mr-5 overflow-visible cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <!-- my cart drawer -->
+            <div class="drawer drawer-end" style="z-index: 999999;">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- icon -->
+                    <label for="my-drawer-4" class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6 mr-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </label>
+                    <!-- icon -->
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay">
+                    </label>
+                    <!-- product list -->
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-3/4 lg:w-2/4 xl:w-2/5 2xl:w-2/6 p-4">
+                        <span class="p-4 text-3xl">My Cart</span>
+                        <!-- 1 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://app.pharmackw.com/uploads/images/items/mzd7emzvnerq7xjggshl.png"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Dynasty Cream</h2>
+                                    <p>$20 / 50 ml</p>
+
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 2 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://down-th.img.susercontent.com/file/sg-50009109-c35c2c5adca28a25e6ed3e9a6ab94c9f_tn"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Radiance Cleansing Balm</h2>
+                                    <p>$17.50 / 100 ml</p>
+
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 3 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://carsha.co/cdn/shop/products/Beauty-of-Joseon-Renew-Apricot-Blossom-Peeling-Gel-100ml-Carasha-8.png?v=1697480222"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Apricot Blossom Peeling Gel</h2>
+                                    <p>$11.70 / 50 ml</p>
+
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 4 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://beauty-garden.hr/cdn/shop/files/220614Ginseng-Cleansing-Oil.png?v=1716558014"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Ginseng Cleansing Oil</h2>
+                                    <p>$17.50 / 100 ml</p>
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 5 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://limihouse.com/cdn/shop/files/FA0CC9D0-9117-4405-BC53-15D70FDF4D9C.png?v=1719217353"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Glow Serum Propolis + Niacinamide 30ml
+                                    </h2>
+                                    <p>$20 / ml</p>
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 6 -->
+                        <li>
+                            <div class="card lg:card-side bg-base-100 shadow-xl mb-4">
+                                <figure>
+                                    <img src="https://www.larevaonline.com/cdn/shop/files/BeautyofJoseonReviveEyeSerum.png?v=1704280819"
+                                        alt="Album" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Beauty Of Joseon Revive Eye Serum : Ginseng + Retinal
+                                    </h2>
+                                    <p>$17 / 30 ml</p>
+                                </div>
+                                <div class="form-control justify-between">
+                                    <label class="label cursor-pointer justify-end">
+                                        <input type="checkbox" checked class="checkbox transition duration-300" />
+                                    </label>
+                                    <button
+                                        class="btn bg-white border-ci2 text-ci2 hover:bg-ci2 hover:text-white items-center mb-2">
+                                        delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- product list -->
+
+                        <!-- checkout -->
+                        <div class="sticky bottom-0 bg-white p-4 w-full flex justify-center items-center rounded-lg">
+                            <div class="p-4">
+                                <!-- ฟอร์มกรอกคูปอง -->
+                                <div class="flex items-center gap-2 mb-4 justify-between">
+                                    <input type="text" placeholder="Enter your coupon code"
+                                        class="input input-bordered w-full" />
+                                    <button
+                                        class="btn btn-outline border-ci2 text-ci2 hover:bg-ci2 hover:border-ci2 w-1/3">Apply
+                                        Coupon</button>
+                                </div>
+                                <div class="flex items-center gap-2 mb-4 justify-between">
+                                    <span class="text-lg font-semibold">Total: $80</span>
+                                    <a href="checkout.html"
+                                        class="btn bg-ci1 hover:bg-ci2 w-1/3 text-white">Checkout</button></a>
+                                </div>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="header__menu" class="flex flex-row p-5 justify-center">
+        <ul class="flex flex-wrap gap-5 justify-center">
+            <a href=""><strong>Beauty Of Joseon</strong></a>
+            <a href=""><strong>ROUNDLAB</strong></a>
+            <a href=""><strong>COSRX</strong></a>
+            <a href=""><strong>Anua</strong></a>
+            <a href=""><strong>Skin 1004</strong></a>
+            <a href=""><strong>Numbuzin</strong></a>
+            <a href=""><strong>BIODANCE</strong></a>
+            <a href=""><strong>TORRIDEN</strong></a>
+            <a href=""><strong>Isntree</strong></a>
+            <a href=""><strong>Laneige</strong></a>
+            <a href=""><strong>Mediheal</strong></a>
+            <a href=""><strong>Medicube</strong></a>
+            <a href=""><strong>Manyo</strong></a>
+        </ul>
+    </div>
+
+
+    <!-- banner -->
+
+    <div class="flex justify-center">
+        <img src="https://blogstatic.beautytocare.com/wp-content/uploads/2023/11/best-beauty-of-joseon-products.jpg"
+            class="w-full sm:max-w-5xl ">
+    </div>
+    <!-- product -->
+    <div class="flex text-4xl m-5 justify-center font-sofia">
+        Brand products
+    </div>
+
+    <div id="content__menu" class="flex flex-row p-5 justify-center">
+        <ul class="flex flex-wrap gap-5 bg-slate-100 p-5 rounded-xl justify-center">
+            <!-- space-x-4 คืออะไร -->
+            <span class="flex items-center p-2"><strong>Filter by :</strong></span>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Cleansing</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Cleanser</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Toner</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Serum</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Moisturizer</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Sunscreen</button>
+            <button
+                class="p-2 active:bg-white active:p-2 active:rounded-lg active:shadow-sm hover:bg-white hover:p-2 hover:rounded-lg hover:shadow-sm">Face
+                Mask</button>
+
+        </ul>
+    </div>
+
+
+
+    <div class="flex justify-center">
+
+        <div id="content__card" class="flex flex-wrap gap-5 mt-4 md:mx-3 lg:mx-4 justify-center max-w-5xl">
+            <!-- 1 -->
+            <a href="product_1.html">
+                <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90 ">
+                    <figure>
+                        <img src="https://skinstash.pk/cdn/shop/files/Untitled_design_-_2024-06-06T125930.696.png?v=1717661083&width=1946"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <p>Beauty Of Joseon Relief Sun Rice + Probiotics Spf50+ pa++++</p>
+                        <p>$20 / 50 ml</p>
+
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- 2 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://beauty-garden.hr/cdn/shop/files/BoJwaterspf2copy.webp?v=1733317124" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Relief Sun Aqua Fresh Rice + B5 Spf50+ pa++++</p>
+                    <p>$20 / 50 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://app.pharmackw.com/uploads/images/items/mzd7emzvnerq7xjggshl.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Dynasty Cream</p>
+                    <p>$20 / 50 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://carsha.co/cdn/shop/products/Beauty-of-Joseon-Renew-Apricot-Blossom-Peeling-Gel-100ml-Carasha-8.png?v=1697480222"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Apricot Blossom Peeling Gel</p>
+                    <p>$11.70 / 50 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://limihouse.com/cdn/shop/files/FA0CC9D0-9117-4405-BC53-15D70FDF4D9C.png?v=1719217353"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Glow Serum Propolis + Niacinamide 30ml</p>
+                    <p>$20 / ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://sentisenti.com/cdn/shop/files/Beauty-of-Joseon-Glow-Replenishing-Rice-Milk-sentisenti.png?v=1716185153&width=2048"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Glow Replenishing Rice Milk</p>
+                    <p>$199 / 50ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://www.larevaonline.com/cdn/shop/files/BeautyofJoseonReviveEyeSerum.png?v=1704280819"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Revive Eye Serum : Ginseng + Retinal</p>
+                    <p>$17 / 30 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://sokostore.com/cdn/shop/files/BeautyofJoseon_GroundRiceandHoneyGlowMask_ProductImage_1.png?v=1719303587&width=1000"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Ground Rice And Honey Glow Mask</p>
+                    <p>$20 / 150 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://beauty-garden.hr/cdn/shop/files/211214_Green-Plum-Refreshing-Cleanser.png?v=1716558237"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Green Plum Cleanser</p>
+                    <p>$99 / 100 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://down-th.img.susercontent.com/file/sg-50009109-c35c2c5adca28a25e6ed3e9a6ab94c9f_tn"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Radiance Cleansing Balm</p>
+                    <p>$17.50 / 100 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90">
+                <figure>
+                    <img src="https://kbeautyhouse.de/media/image/e2/fa/da/Ginseng_Essence_Water_600x600.png"
+                        alt="Shoes" class="max-h-60" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Ginseng Essence Water</p>
+                    <p>$17.50 / 100 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="card bg-slate-100 w-60 rounded-md min-w-60 max-w-90 overflow-hidden">
+                <figure>
+                    <img src="https://beauty-garden.hr/cdn/shop/files/220614Ginseng-Cleansing-Oil.png?v=1716558014"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <p>Beauty Of Joseon Ginseng Cleansing Oil</p>
+                    <p>$17.50 / 100 ml</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-ci1 hover:bg-ci2 text-white">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-slate-100 text-slate-500 p-10 mt-12">
+        <aside>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>
+                KiKi Korea Ltd.
+                <br />
+                Importing skincare since 1992
+            </p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Social</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
